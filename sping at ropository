@@ -1,0 +1,12 @@
+// 데이터를 관리 하는 인터페이스
+
+package com.example.subject_for_caps.repository;
+
+import com.example.subject_for_caps.for_user.ForAccount;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository <ForAccount,Long> {
+     // 이메일로 사용자 찾기 (선택적 기능)
+    ForAccount findByEmail(String email);
+
+}
