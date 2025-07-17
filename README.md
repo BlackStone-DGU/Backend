@@ -7,8 +7,8 @@
 
 | 김대현 | 조준용 |
 |:---:|:---:
-| <img src="" width="180" height="180"> | <img src="" width="180" height="180"> |
-| [@]() | [@]() |
+| <img src="https://github.com/kimdh0521.png" width="180" height="180"> | <img src="https://github.com/Junyong-Cho.png" width="180" height="180"> |
+| [@kimdh0521](https://github.com/kimdh0521) | [@Junyong-Cho](https://github.com/Junyong-Cho) |
 
 ---
 
