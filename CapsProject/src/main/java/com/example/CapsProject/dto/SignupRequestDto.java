@@ -6,6 +6,7 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -22,8 +23,19 @@ public class SignupRequestDto {
     @NotBlank(message = "이름은 필수입니다.")
     private String name;
 
+    @NotNull
+    @Positive
+    private double height;
+
+    @NotNull
+    @Positive
+    private double weight;
+
     @NotNull(message = "소속은 필수입니다. 학교 학과순으로 작성해주세요.")
     @Valid
     private Affiliation affiliation;//소속
+
+    @NotBlank(message = "학번은 필수입니다.")
+    private String studentId;
 
 }

@@ -7,5 +7,6 @@ import com.example.CapsProject.entity.DailyMission;
 
 public interface DailyMissionRepository extends JpaRepository<DailyMission,Long>{
     List<DailyMission> findAll();
-    Optional<DailyMission> findByName(String name);
+    Optional<DailyMission> findByNameAndBaseReps(String name, int baseReps);
+    boolean existsByNameAndBaseReps(String name, int baseReps);
 }

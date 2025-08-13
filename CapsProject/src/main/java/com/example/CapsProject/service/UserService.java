@@ -34,7 +34,10 @@ public class UserService {
             .email(dto.getEmail())
                 .password(dto.getPassword())
                 .name(dto.getName())
+                .height(dto.getHeight())
+                .weight(dto.getHeight())
                 .affiliation(affiliation)
+                .studentId(dto.getStudentId())
                 .build();
 
 

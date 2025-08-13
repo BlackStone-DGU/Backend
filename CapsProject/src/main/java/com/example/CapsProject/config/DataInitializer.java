@@ -17,10 +17,10 @@ public class DataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception{
         if(dailyMissionRepository.count()==0){
-            dailyMissionRepository.save(new DailyMission("팔굽혀펴기"));
-            dailyMissionRepository.save(new DailyMission("윗몸일으키기"));
-            dailyMissionRepository.save(new DailyMission("스쿼트"));
-            dailyMissionRepository.save(new DailyMission("달리기"));
+            dailyMissionRepository.save(new DailyMission("팔굽혀펴기", 20));
+            dailyMissionRepository.save(new DailyMission("윗몸일으키기",20));
+            dailyMissionRepository.save(new DailyMission("스쿼트", 20));
+            dailyMissionRepository.save(new DailyMission("달리기",10));
         }
     }
 
